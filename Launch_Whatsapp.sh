@@ -17,18 +17,16 @@ launch_WhatsApp(){
     wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -t 1
 }
 
-launch_WhatsApp
+# launch_WhatsApp
 
 # checking if the WhatsApp is launched or not
-# launched=`wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f3 | tail -n 1`
+launched_at=`wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f3 | tail -n 1`
 
-# echo "${launched}"
-
-# if [ $launched == "" ]
-# then
-# launch_WhatsApp()
-# fi
-# else
-# output =`wmctrl -s ${launched}`
-# echo "${output}"
-#fi
+if [ $launched == "" ]
+then
+launch_WhatsApp()
+fi
+else
+output =`wmctrl -s ${launched}`
+echo "${output}"
+fi
