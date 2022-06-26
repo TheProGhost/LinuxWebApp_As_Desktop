@@ -43,6 +43,16 @@ sleep <your_value>
 ## <span style="color: red"> Caution </span>
 * I have tested this on the _`Ubuntu 22.04`_ with the `Gnome 42 Desktop` having `X11 Display Server `
 * For the other _distros_ and other _desktop environment_ you guys can test it and let me know
+
+### Change of browser
+* The Browser is changed from firefox to Brave as firefox was having following issue, due to which the command of firefox was noable to complete and it was causing abnormal behaviour of script
+```
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+```
+
+* Now in the Brave Browser the full scrren toggle is not working properly. 
+* So, some work is needed to be done.
 <br/>
 <br/>
 
