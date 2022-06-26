@@ -20,7 +20,10 @@ sudo chmod +x Launch_Whatsapp.sh
 ./Launch_Whatsapp.sh
 ```
 <br/>
-_`If the script is not seem to working or browser is opening in the same workspace,`_<br/>
+
+_`If the script is not seem to working or browser is opening in the same workspace,`_
+<br/>
+
 _`just increase the value of sleep`_
 <br/>
 
@@ -29,6 +32,7 @@ _`just increase the value of sleep`_
 sleep <your_value>
 ```
 * That issue is happening due to the slow internet or the firefox was unable to load the WhatsApp web
+<br/>
 
 
 ## <span style="color: red"> Caution </span>
