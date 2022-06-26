@@ -6,7 +6,7 @@
 * If the script is not seem to working or browser is opening in the same workspace, just increase the value
 ``` 
 # increase here
-sleep *your_value*
+sleep <your_value>
 ```
 
 ## Future Work
