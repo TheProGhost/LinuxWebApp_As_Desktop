@@ -4,6 +4,9 @@
 # launch WhatsApp function
 launch_WhatsApp(){
     
+    # determining the workspace which has no apps opened
+    free_workspace=`wmctrl -d | cut -d ' ' -f1 | tail -n 1`
+
     # launching whatsapp in firefox
     firefox --new-window 'web.whatsapp.com'
     # getting the Window_Id of the window with WhatsApp    
@@ -14,7 +17,9 @@ launch_WhatsApp(){
     # toggle the window to full screen
     wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -b toggle,fullscreen
     # movinf window to the new workspace
-    wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -t 1
+    wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -t $free_workspace
+
+    wmctrl -s $free_workspace
 }
 
 # launch_WhatsApp
