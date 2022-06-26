@@ -19,6 +19,7 @@ cd LinuxWebApp_As_Desktop
 sudo chmod +x Launch_Whatsapp.sh
 ./Launch_Whatsapp.sh
 ```
+### Caution
 * I have tested this on the _`Ubuntu 22.04`_ with the `Gnome 42 Desktop`
 * For the other _distros_ and other _desktop environment_ you guys can test it and let me know
 <br/>
