@@ -15,7 +15,7 @@ sudo apt install wmctrl
 <br/>
 <br/>
 
-_`If the script is not seem to working or browser is opening in the same workspace,`_
+_`If the script is not seem to working or browser is opening in the same workspace,`_<br/>
 _`just increase the value of sleep`_
 <br/>
 
