@@ -25,6 +25,7 @@ sleep <your_value>
 ```
 * That issue is happening due to the slow internet or the firefox was unable to load the WhatsApp web
 ## Future Work
+* testing on other _distros_ and other _desktop environment_
 * Adding the WhatsApp.desktop file 
 * Modifying the .dektop file to launch whatsapp web
 * Another apps are coming 
