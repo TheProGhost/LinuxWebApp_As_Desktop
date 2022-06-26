@@ -4,7 +4,7 @@
 * This shell script for launching the WhatsApp web app in browser as full scrren in the another workspace 
 * Work is going on right now so have patience
 <div align=centre>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=TheProGhost.LinuxWebApp_As_Desktop&left_text=My%20Page%20Visitors"> 
+<img src="https://visitor-badge.laobi.icu/badge?page_id=TheProGhost.LinuxWebApp_As_Desktop&left_text=Page%20Views"> 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 </div>
