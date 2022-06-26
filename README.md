@@ -47,7 +47,8 @@ sleep <your_value>
 ### Change of browser
 * The Browser is changed from firefox to Brave as firefox was having following issue, due to which the command of firefox was noable to complete and it was causing abnormal behaviour of script
 ```
-###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) 
+Channel closing: too late to send/recv, messages will be lost
 
 ```
 
