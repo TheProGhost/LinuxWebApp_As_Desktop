@@ -29,7 +29,8 @@ _`just increase the value of sleep`_
 sleep <your_value>
 ```
 * That issue is happening due to the slow internet or the firefox was unable to load the WhatsApp web
-- ### Caution
+
+### <span style="color: red"> Caution </span>
 * I have tested this on the _`Ubuntu 22.04`_ with the `Gnome 42 Desktop`
 * For the other _distros_ and other _desktop environment_ you guys can test it and let me know
 <br/>
