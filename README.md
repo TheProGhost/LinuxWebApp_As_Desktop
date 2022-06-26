@@ -3,9 +3,11 @@
 * I am just finding a way to open it in the browser with fullscreen so it will look like an app
 * This shell script for launching the WhatsApp web app in browser as full scrren in the another workspace 
 * Work is going on right now so have patience
-<p align=centre>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=TheProGhost.LinuxWebApp_As_Desktop&left_text=My%20Page%20Visitors">
-</p>
+<div align=centre>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=TheProGhost.LinuxWebApp_As_Desktop&left_text=My%20Page%20Visitors"> 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+</div>
 
 ## Installation
 * To use this script you have to install the package named __wmctrl__ using the given command
