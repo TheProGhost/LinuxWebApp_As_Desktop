@@ -9,7 +9,7 @@ launch_WhatsApp(){
     # getting the Window_Id of the window with WhatsApp    
     # `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` 
 
-    sleep 0.6
+    sleep 0.8
     echo "After sleep"    # toggle the window to full screen
     wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -b toggle,fullscreen
     echo " After full scrren"
@@ -22,11 +22,10 @@ launch_WhatsApp(){
 # checking if the WhatsApp is launched or not
 launched_at=`wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f3 | tail -n 1`
 
-if [ $launched == "" ]
+if [ $launched_at -eq  ]
 then
-launch_WhatsApp()
-fi
+launch_WhatsApp
 else
-output =`wmctrl -s ${launched}`
-echo "${output}"
+wmctrl -s $launched_at
+echo "Moving to the Window"
 fi
