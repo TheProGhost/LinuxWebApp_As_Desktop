@@ -5,11 +5,20 @@
 * Work is going on right now so have patience
 
 ## Installation
-* To use this script you have to install the __wmctrl__ using the given command
+* To use this script you have to install the package named __wmctrl__ using the given command
 ``` 
 sudo apt install wmctrl
 ``` 
-
+* Now, clone the repo by typing given to the terminal
+```
+git clone https://github.com/TheProGhost/LinuxWebApp_As_Desktop.git
+```
+* After cloning the repo, you can use it with given commands
+```
+cd LinuxWebApp_As_Desktop
+sudo chmod +x Launch_Whatsapp.sh
+./Launch_Whatsapp.sh
+```
 * I have tested this on the _`Ubuntu 22.04`_ with the `Gnome 42 Desktop`
 * For the other _distros_ and other _desktop environment_ you guys can test it and let me know
 <br/>
