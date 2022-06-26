@@ -3,9 +3,15 @@
 
 # launch WhatsApp function
 launch_WhatsApp(){
-    wmctrl -s 1
-    firefox --new-tab -url web.whatsapp.com
-    wmctrl -r firefox -b toggle,fullscreen
+    
+    # launching whatsapp in firefox
+    firefox --new-window 'web.whatsapp.com'
+    # getting the Window_Id of the window with WhatsApp    
+    launched_whatsapp = `wmctrl -lx | grep firefox | grep WhatsApp | cut -d '' -f1` 
+    # toggle the window to full screen
+    wmctrl -i -r $launched_whatsapp -b toggle,fullscreen
+    # movinf window to the new workspace
+    wmctrl -i -r 
 }
 
 launch_WhatsApp
