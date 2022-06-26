@@ -7,12 +7,12 @@ launch_WhatsApp(){
     # launching whatsapp in firefox
     firefox --new-window 'web.whatsapp.com'
     # getting the Window_Id of the window with WhatsApp    
-    # `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` 
+    win_id=`wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` 
 
+    # sleep command, so the above command can finish the execution properly
     sleep 0.8
-    echo "After sleep"    # toggle the window to full screen
+    # toggle the window to full screen
     wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -b toggle,fullscreen
-    echo " After full scrren"
     # movinf window to the new workspace
     wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -t 1
 }
