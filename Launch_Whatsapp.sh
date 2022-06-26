@@ -7,7 +7,7 @@ launch_WhatsApp(){
     # launching whatsapp in firefox
     firefox --new-window 'web.whatsapp.com'
     # getting the Window_Id of the window with WhatsApp    
-    win_id=`wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` 
+    #win_id=`wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` 
 
     # sleep command, so the above command can finish the execution properly
     sleep 0.8
