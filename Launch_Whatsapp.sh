@@ -7,25 +7,28 @@ launch_WhatsApp(){
     # determining the workspace which has no apps opened
     free_workspace=`wmctrl -d | cut -d ' ' -f1 | tail -n 1`
 
-    # launching whatsapp in firefox
-    firefox --new-window 'web.whatsapp.com'
+    # launching whatsapp in brave-browser
+    brave-browser --new-window 'web.whatsapp.com'
     # getting the Window_Id of the window with WhatsApp    
-    #win_id=`wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` 
+    #win_id=`wmctrl -lx | grep brave-browser | grep WhatsApp | cut -d ' ' -f1` 
 
     # sleep command, so the above command can finish the execution properly
-    sleep 0.8
-    # toggle the window to full screen
-    wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -b toggle,fullscreen
+    sleep 1
+
     # movinf window to the new workspace
-    wmctrl -i -r `wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f1` -t $free_workspace
+    wmctrl -i -r `wmctrl -lx | grep brave-browser | grep WhatsApp | cut -d ' ' -f1` -t $free_workspace
+
+    # toggle the window to full screen
+    wmctrl -i -r `wmctrl -lx | grep brave-browser | grep WhatsApp | cut -d ' ' -f1` -b toggle,fullscreen
 
     wmctrl -s $free_workspace
+    #xdotool key F11
 }
 
 # launch_WhatsApp
 
 # checking if the WhatsApp is launched or not
-launched_at=`wmctrl -lx | grep firefox | grep WhatsApp | cut -d ' ' -f3 | tail -n 1`
+launched_at=`wmctrl -lx | grep brave-browser | grep WhatsApp | cut -d ' ' -f3 | tail -n 1`
 
 if [ $launched_at -eq  ]
 then
