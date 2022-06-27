@@ -8,18 +8,18 @@ launch_WhatsApp(){
     free_workspace=`wmctrl -d | cut -d ' ' -f1 | tail -n 1`
 
     # launching whatsapp in brave-browser
-    brave-browser --new-window 'web.whatsapp.com'
+    brave-browser --new-window 'web.whatsapp.com' -start-fullscreen
     # getting the Window_Id of the window with WhatsApp    
     #win_id=`wmctrl -lx | grep brave-browser | grep WhatsApp | cut -d ' ' -f1` 
 
     # sleep command, so the above command can finish the execution properly
-    sleep 1
+    sleep 0.6
 
     # movinf window to the new workspace
     wmctrl -i -r `wmctrl -lx | grep brave-browser | grep WhatsApp | cut -d ' ' -f1` -t $free_workspace
 
     # toggle the window to full screen
-    wmctrl -i -r `wmctrl -lx | grep brave-browser | grep WhatsApp | cut -d ' ' -f1` -b toggle,fullscreen
+    #wmctrl -i -r `wmctrl -lx | grep brave-browser | grep WhatsApp | cut -d ' ' -f1` -b toggle,fullscreen
 
     wmctrl -s $free_workspace
     #xdotool key F11
