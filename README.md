@@ -54,7 +54,7 @@ Channel closing: too late to send/recv, messages will be lost
 
 * ~~Now in the Brave Browser the full scrren toggle is not working properly.~~ 
 * ~~So, some work is needed to be done.~~
-* Now, the fullscreen toggle is working properly. 
+* Now, the fullscreen toggle of brave browser is working properly. 
 <br/>
 <br/>
 
