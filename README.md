@@ -7,8 +7,8 @@
 
 <img src="https://visitor-badge.laobi.icu/badge?page_id=TheProGhost.LinuxWebApp_As_Desktop&left_text=Page%20Views"> 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Author](https://img.shields.io/badge/Author-TheProGhost-blue)](https://github.com/TheProGhost)
+[![MIT license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://lbesson.mit-license.org/)
+[![Author](https://img.shields.io/badge/Author-TheProGhost-orange)](https://github.com/TheProGhost)
 
 </div>
 
